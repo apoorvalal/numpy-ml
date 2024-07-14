@@ -15,7 +15,7 @@ except ModuleNotFoundError:
     NO_PD = True
 
 try:
-    import gym
+    import gymnasium as gym
 except ModuleNotFoundError:
     fstr = (
         "Agents in `numpy_ml.rl_models` use the OpenAI gym for training. "

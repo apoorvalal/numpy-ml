@@ -220,7 +220,7 @@ class BanditTrainer:
             The policy trained during the last (i.e. most recent) duplicate
             run.
         """  # noqa: E501
-        if not str(policy) in self.logs:
+        if str(policy) not in self.logs:
             self.init_logs(policy)
 
         p = str(policy)
